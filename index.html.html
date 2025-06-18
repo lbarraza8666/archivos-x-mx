@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archivos X MX</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #00ffcc;
+    }
+    header {
+      background: rgba(17, 17, 17, 0.9);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 3px solid #00ffcc;
+    }
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.75rem 0;
+      border-top: 2px solid #00ffcc;
+      border-bottom: 2px solid #00ffcc;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 100px;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 10px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-left: 5px solid #00ffcc;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    details {
+      background: #111;
+      padding: 1rem;
+      border: 1px solid #00ffcc;
+      margin-bottom: 1rem;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      background: #222;
+      border: 1px solid #00ffcc;
+      color: #00ffcc;
+    }
+    button {
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #00ccaa;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .social a img {
+      width: 32px;
+      height: 32px;
+    }
+    footer {
+      background: rgba(17, 17, 17, 0.9);
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 3px solid #00ffcc;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script>
+    function filtrarArticulos() {
+      let input = document.getElementById('buscador');
+      let filter = input.value.toLowerCase();
+      let details = document.querySelectorAll('details');
+      details.forEach(det => {
+        let text = det.textContent.toLowerCase();
+        det.style.display = text.includes(filter) ? 'block' : 'none';
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/504977461_720455663675416_6448401237032334149_n.jpg" alt="Logo Archivos X MX">
+    <h1>Archivos X MX</h1>
+    <p>Tu portal de misterios, teorías de conspiración y fenómenos inexplicables</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#articulos">Artículos</a>
+    <a href="#secciones">Secciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- Contenido principal aquí (sin cambios en esta parte) -->
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+      <a href="https://youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="YouTube"></a>
+      <a href="https://twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Twitter"></a>
+    </div>
+    <form action="#" method="post">
+      <p><strong>Suscríbete a nuestro boletín:</strong></p>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+    <p>&copy; 2025 Archivos X MX | Todos los derechos reservados | Lo inexplicable... explicado</p>
+  </footer>
+</body>
+</html>
